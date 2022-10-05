@@ -1,0 +1,100 @@
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+a:hover{
+  cursor: pointer;
+}
+
+.dc-debug{
+  border:1px solid green;
+  background-color: lightgreen;
+}
+
+.dc-reset{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root{
+  --grey:rgb(73,70,70,);
+  --darkblue:rgb(13,28,46);
+}
+
+/*++++++++++ HEADER ++++++++++++++++++*/
+
+header{
+  height:60px;
+  background-color: white;
+  color:grey;
+  top:0;
+  left:0;
+  z-index: 999;
+}
+
+.dc-nav-link{
+  color:var(--grey);
+}
+
+.dc-form{
+  width:60%;
+}
+
+/* +++++++++  MAIN / GENERAL +++++++++++ */
+
+main{
+  height:calc(100vh - 60px);
+  padding-top:60px;
+
+}
+
+/* +++++ASIDE+++++++++ */
+
+aside{
+  height:calc(100vh - 60px);
+  background-color: var(--darkblue);
+
+}
+
+.dc-aside-top, .dc-aside-bottom{
+  font-size: 1.1rem;
+  padding:20px 5px;
+}
+
+
+/* ++++++++++  MAIN CONTAINER +++++++++++ */
+
+main .dc-main-container{
+  background-color: pink;
+  padding:0;
+  height:calc(100vh - 60px);
+  
+}
+
+main .dc-main-container h3, .dc-main-container h5{
+  display: inline-block;
+  color:white;
+}
+
+main .row.dc-reset:first-of-type{
+  height: calc(100vh - 60px);
+
+}
+
+.dc-upper-stripe{
+  background-color: var(--bs-blue);
+}
+.dc-badge{
+  border-radius:10px;
+  background-color: rgba(0,0,0,0.3);
+  font-weight: 300;
+  margin:0 5px;
+}
