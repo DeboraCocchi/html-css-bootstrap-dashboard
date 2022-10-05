@@ -93,8 +93,81 @@ main .row.dc-reset:first-of-type{
   background-color: var(--bs-blue);
 }
 .dc-badge{
-  border-radius:10px;
+  border-radius:8px;
+  padding:5px 8px;
+  font-weight: 400;
+  margin:0 3px;
+  color:white;
+}
+
+.dc-badge.dc-dark{
   background-color: rgba(0,0,0,0.3);
+}
+
+.dc-badge.dc-green{
+  background-color: var(--bs-green);
+}
+
+.dc-badge.dc-yellow{
+  background-color: var(--bs-yellow);
+  color:black;
+}
+
+.dc-badge.dc-red{
+  background-color: var(--bs-red);
+}
+
+
+/* ++++++ CONTENUTO MOBILE: SECTIONS */
+
+.dc-section .dc-section-head{
+  border:1px solid grey;
+  background-color: #e9ecef;
+}
+
+
+.dc-section-head .plus i{
+  font-size:220%;
+  font-weight:300;
+}
+
+.dc-section-body{
+  background-color: white;
+  border-left:1px solid grey;
+  border-bottom:1px solid grey;
+  border-right:1px solid grey;
   font-weight: 300;
-  margin:0 5px;
+}
+
+.dc-section-body table th[scope="row"]::before{
+  content:'\f121'; 
+	font-weight: 400;
+  font-family: "Font Awesome 5 Free";
+}
+
+table{
+  text-align: center;
+}
+
+table tr{
+  line-height:3rem;
+}
+
+.dc-mini-icons{
+  display: inline-block;
+  position: relative;
+  border-radius:5px;
+  border:1px solid grey;
+  padding:3px;
+  width:40px;
+  height:40px;
+  color:var(--grey);
+  margin:5px;
+}
+
+.dc-mini-icons i{
+  position: absolute;
+  font-size: 1.4rem;
+  right: 8px;
+  top: 8px;
 }
