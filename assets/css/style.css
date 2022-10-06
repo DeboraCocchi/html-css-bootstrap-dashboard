@@ -5,12 +5,14 @@ body{
   font-weight: 300;
 }
 
-a{
+header a, aside a{
   text-decoration: none;
   color:white;
 }
-a:hover{
+header a:hover, aside a:hover{
   cursor: pointer;
+  font-weight: bold;
+  color:white;
 }
 
 .dc-debug{
@@ -48,17 +50,16 @@ header{
   width:60%;
 }
 
+.dropdown-menu.dc-dropdown[data-bs-popper]{
+  left:-150px;
+}
+
 /* +++++++++  MAIN / GENERAL +++++++++++ */
 
 main{
   height:calc(100vh - 60px);
   padding-top:60px;
 
-}
-
-main .row.dc-reset:first-of-type{
-  height:100%;
-  background-color: red;;
 }
 
 /* +++++ASIDE+++++++++ */
@@ -69,34 +70,35 @@ aside{
 
 }
 
+aside>div{
+  background-image: url('../img/sidebar-bg.png');
+  background-position: cover;
+}
+
 .dc-aside-top, .dc-aside-bottom{
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding:20px 5px;
 }
 
 
 /* ++++++++++  MAIN CONTAINER +++++++++++ */
 
-main .dc-main-container{
-  background-color: pink;
-  padding:0;
-  height:calc(100vh - 60px);
-  
-}
 
 main .dc-main-container h3, .dc-main-container h5{
   display: inline-block;
   color:white;
 }
 
-main .row.dc-reset:first-of-type{
-  height: calc(100vh - 60px);
-
-}
-
 .dc-upper-stripe{
   background-color: var(--bs-blue);
+  color:white;
+  height:80px;
 }
+
+.dc-upper-stripe + .row.overflow-auto{
+  height:calc(100vh - 140px);
+}
+
 .dc-badge{
   border-radius:8px;
   padding:3px 6px;
@@ -129,6 +131,8 @@ main .row.dc-reset:first-of-type{
 .dc-section .dc-section-head{
   border:1px solid grey;
   background-color: #e9ecef;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 
@@ -143,7 +147,12 @@ main .row.dc-reset:first-of-type{
   border-bottom:1px solid grey;
   border-right:1px solid grey;
   font-weight: 300;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
 }
+
+/* +++++++++  TABLE  +++++++++++++ */
 
 .dc-section-body table th[scope="row"]::before{
   content:'\f121''\00a0 '; 
@@ -167,18 +176,11 @@ table{
   text-align: center;
   font-size:14px;
 }
-/* 
-table tr{
-  line-height:40px;
- 
-} */
 
 table th[class="nome"]{
   width:50%;
   text-align: left;
 }
-
-
 
 .dc-mini-icons{
   display: inline-block;
@@ -202,3 +204,41 @@ span.dc-mini-icons{
   top: 3px;
   color:grey;
 }
+
+/* ++++++++++   ACCORDION ++++++++++++ */
+
+.dc-border{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+/* ++++++++++ GRAFICO +++++++++++++++ */
+.dc-right-main .dc-section:last-of-type .dc-section-body{
+  border-radius:8px;
+  border-top:1px solid grey;
+}
+.dc-right-main .dc-section-body:last-of-type h3{
+  color:var(--grey);
+}
+.dc-right-main .dc-section-body:last-of-type img{
+  width:90%;
+  padding:8px;
+}
+
+.dc-right-main .dc-section-body:last-of-type ul{
+  list-style: none;
+}
+
+.dc-outline-cont{
+  border:1px solid grey;
+  border-radius:8px;
+  
+}
+
+.dc-right-main ul li{
+  border-top:1px solid grey;
+  padding:8px 10px;
+  margin:0;
+}
+

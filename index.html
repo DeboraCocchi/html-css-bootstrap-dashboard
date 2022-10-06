@@ -64,11 +64,11 @@
               <a class="nav-link dc-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-bell-fill"></i>
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul class="dropdown-menu dc-dropdown">
+                <li><a class="dropdown-item" href="#">Notifications</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Log-in</a></li>
               </ul>
             </li>
             
@@ -95,9 +95,11 @@
   
   <main>
     <div class="container-fluid dc-reset">
-      <div class="row dc-reset overflow-auto">
+      <div class="row dc-reset">
 
-        <aside class="col-1 h-100 d-flex flex-column justify-content-between align-items-center">
+        <aside class="col-1 p-0">
+          <div class="d-flex flex-column justify-content-between align-items-center h-100">
+          
           
             <div class="dc-aside-top d-flex flex-column justify-content-center align-items-center">
               
@@ -109,22 +111,23 @@
             <div class="dc-aside-bottom">
               <div><a href="#"><i class="fa-solid fa-gear"></i><span>&nbsp;Admin</span></a></div>
             </div>
+          </div>
         </aside>
         
         
-        <div class="col-11 dc-main-container">
+        <div class="col-11 p-0 dc-main-container">
       
 
           <div class="container-fluid p-0">
             
             
             <div class="row dc-upper-stripe w-100 m-0">
-              <div class="col-12 col-lg-8">
-                <h3>Boolean</h3><span class="badge dc-badge dc-dark">Piano blaze</span>
+              <div class="col-12 col-lg-8 px-2 py-2">
+                <h3 class="m-0">Boolean</h3><span class="badge dc-badge dc-dark">Piano blaze</span>
                 <div class="dc-breadcrumb">
                   <span class="badge dc-badge dc-dark">3 app</span>
-                  <span class="badge dc-badge dc-dark d-inline-block d-md-none"><i class="fa-solid fa-angles-right"></i></span>
-                  <span class="d-none d-md-inline-block">
+                  <span class="badge dc-badge dc-dark d-inline-block d-lg-none"><i class="fa-solid fa-angles-right"></i></span>
+                  <span class="d-none d-lg-inline-block">
                     <span class="badge dc-badge dc-dark">Boolean mobile app</span>
                     <span class="badge dc-badge dc-dark">Boolean web app</span>
                     <span class="badge dc-badge dc-dark">Boolean blog app</span>
@@ -134,284 +137,323 @@
 
 
               </div>
-              <div class="col-12 col-lg-4">
-                <p>Alunni affranti negli ultimi 30 minuti:<br><h3>12</h3>
+              <div class="col-12 col-lg-4 px-2 py-2">
+                <p class="m-0">Alunni affranti negli ultimi 30 minuti:<br><h3 class="m-0">12</h3>
               </div>
             </div>
 
 
-            <div class="row dc-reset">
+            <div class="row overflow-auto m-0 p-0">
 
               <!-- -----------    LEFT MAIN  -------------- -->
-              <div class="col-12 col-lg-8 dc-debug dc-left-main h-100">
+              <div class="col-12 p-3 col-lg-8 dc-left-main  h-100">
+                <div class="container-fluid p-0">
+
+                  <div class="row m-0 p-0">
                 
-                 <!-- --------TABELLA CLASSI----------- -->
-                <div class="dc-section p-2">
-                  <div class="dc-section-head d-flex justify-content-between p-2">
-                    <h2 class="dc-reset">Prossime Classi</h2>
-                    <div class="plus d-flex align-items-center">
-                      <i class="fa-regular fa-square-plus"></i>
-                    </div>
-                  </div>
-                 
-                  <div class="dc-section-body">
+                      <!-- --------TABELLA CLASSI----------- -->
+                      <div class="dc-section col-12 mt-lg- p-lg-0 ">
+                        <div class="dc-section-head d-flex justify-content-between p-2">
+                          <h2 class="dc-reset">Prossime Classi</h2>
+                          <div class="plus d-flex align-items-center">
+                            <i class="fa-regular fa-square-plus"></i>
+                          </div>
+                        </div>
+                      
+                        <div class="dc-section-body">
 
-                      <table class="table mb-2 table-hover">
-                        <thead>
-                          <tr>
-                            <th scope="col" class="nome">Nome</th>
-                            <th scope="col">Data Inizio</th>
-                            <th scope="col">ROI</th>
-                            <th scope="col">Stato</th>
-                            <th scope="col">Azioni</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">Classe 75</th>
-                            <td>15 febbraio 2021</td>
-                            <td>20%</td>
-                            <td><span class="dc-badge dc-green">Done</span></td>
-                            <td>
-                              <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-pencil"></i>
-                                </span>
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-trash"></i>
-                                </span>
-                              </div>
-                            </td>
-                          </tr>
+                            <table class="table mb-2 table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col" class="nome">Nome</th>
+                                  <th scope="col">Data Inizio</th>
+                                  <th scope="col">ROI</th>
+                                  <th scope="col">Stato</th>
+                                  <th scope="col">Azioni</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Classe 75</th>
+                                  <td>15 febbraio 2021</td>
+                                  <td>20%</td>
+                                  <td><span class="dc-badge dc-green">Done</span></td>
+                                  <td>
+                                    <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-pencil"></i>
+                                      </span>
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                      </span>
+                                    </div>
+                                  </td>
+                                </tr>
 
-                          <tr>
-                            <th scope="row">Classe 76</th>
-                            <td>16 febbraio 2021</td>
-                            <td>20%</td>
-                            <td><span class="dc-badge dc-green">Done</span></td>
-                            <td>
-                              <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-pencil"></i>
-                                </span>
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-trash"></i>
-                                </span>
-                              </div>
-                            </td>
-                          </tr>
+                                <tr>
+                                  <th scope="row">Classe 76</th>
+                                  <td>16 febbraio 2021</td>
+                                  <td>20%</td>
+                                  <td><span class="dc-badge dc-green">Done</span></td>
+                                  <td>
+                                    <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-pencil"></i>
+                                      </span>
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                      </span>
+                                    </div>
+                                  </td>
+                                </tr>
 
-                          <tr>
-                            <th scope="row">Classe 77</th>
-                            <td>18 febbraio 2021</td>
-                            <td>20%</td>
-                            <td><span class="dc-badge dc-yellow">Process</span></td>
-                            <td>
-                              <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-pencil"></i>
-                                </span>
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-trash"></i>
-                                </span>
-                              </div>
-                            </td>
-                          </tr>
+                                <tr>
+                                  <th scope="row">Classe 77</th>
+                                  <td>18 febbraio 2021</td>
+                                  <td>20%</td>
+                                  <td><span class="dc-badge dc-yellow">Process</span></td>
+                                  <td>
+                                    <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-pencil"></i>
+                                      </span>
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                      </span>
+                                    </div>
+                                  </td>
+                                </tr>
 
-                          <tr>
-                            <th scope="row">Classe 78</th>
-                            <td>20 febbraio 2021</td>
-                            <td>20%</td>
-                            <td><span class="dc-badge dc-green">Done</span></td>
-                            <td>
-                              <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-pencil"></i>
-                                </span>
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-trash"></i>
-                                </span>
-                              </div>
-                            </td>
-                          </tr>
+                                <tr>
+                                  <th scope="row">Classe 78</th>
+                                  <td>20 febbraio 2021</td>
+                                  <td>20%</td>
+                                  <td><span class="dc-badge dc-green">Done</span></td>
+                                  <td>
+                                    <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-pencil"></i>
+                                      </span>
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                      </span>
+                                    </div>
+                                  </td>
+                                </tr>
 
-                          <tr>
-                            <th scope="row">Classe 79</th>
-                            <td>23 febbraio 2021</td>
-                            <td>20%</td>
-                            <td><span class="dc-badge dc-red">Failed</span></td>
-                            <td>
-                              <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-pencil"></i>
-                                </span>
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-trash"></i>
-                                </span>
-                              </div>
-                            </td>
-                          </tr>
+                                <tr>
+                                  <th scope="row">Classe 79</th>
+                                  <td>23 febbraio 2021</td>
+                                  <td>20%</td>
+                                  <td><span class="dc-badge dc-red">Failed</span></td>
+                                  <td>
+                                    <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-pencil"></i>
+                                      </span>
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                      </span>
+                                    </div>
+                                  </td>
+                                </tr>
 
-                          <tr>
-                            <th scope="row">Classe 80</th>
-                            <td>24 febbraio 2021</td>
-                            <td>20%</td>
-                            <td><span class="dc-badge dc-green">Done</span></td>
-                            <td>
-                              <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-pencil"></i>
-                                </span>
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-trash"></i>
-                                </span>
-                              </div>
-                            </td>
-                          </tr>
+                                <tr>
+                                  <th scope="row">Classe 80</th>
+                                  <td>24 febbraio 2021</td>
+                                  <td>20%</td>
+                                  <td><span class="dc-badge dc-green">Done</span></td>
+                                  <td>
+                                    <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-pencil"></i>
+                                      </span>
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                      </span>
+                                    </div>
+                                  </td>
+                                </tr>
 
-                          <tr>
-                            <th scope="row">Classe 81</th>
-                            <td>25 febbraio 2021</td>
-                            <td>20%</td>
-                            <td><span class="dc-badge dc-yellow">Process</span></td>
-                            <td>
-                              <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-pencil"></i>
-                                </span>
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-trash"></i>
-                                </span>
-                              </div>
-                            </td>
-                          </tr>
+                                <tr>
+                                  <th scope="row">Classe 81</th>
+                                  <td>25 febbraio 2021</td>
+                                  <td>20%</td>
+                                  <td><span class="dc-badge dc-yellow">Process</span></td>
+                                  <td>
+                                    <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-pencil"></i>
+                                      </span>
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                      </span>
+                                    </div>
+                                  </td>
+                                </tr>
 
-                          <tr>
-                            <th scope="row">Classe 82</th>
-                            <td>28 febbraio 2021</td>
-                            <td>20%</td>
-                            <td><span class="dc-badge dc-red">Failed</span></td>
-                            <td>
-                              <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-pencil"></i>
-                                </span>
-                                <span class="dc-mini-icons text-center">
-                                <i class="fa-solid fa-trash"></i>
-                                </span>
+                                <tr>
+                                  <th scope="row">Classe 82</th>
+                                  <td>28 febbraio 2021</td>
+                                  <td>20%</td>
+                                  <td><span class="dc-badge dc-red">Failed</span></td>
+                                  <td>
+                                    <div class="dc-mini-icons-container d-flex align-items-center justify-content-center">
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-pencil"></i>
+                                      </span>
+                                      <span class="dc-mini-icons text-center">
+                                      <i class="fa-solid fa-trash"></i>
+                                      </span>
+                                    </div>
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                        </div>
+                      </div>
+                        <!-- --------/ TABELLA ----------- -->
+                        
+                        <!-- -------- FAQ - ACCORDION ----------- -->
+
+                        <div class="dc-section mt-lg-3 p-lg-0 col-12">
+                            <div class="dc-section-head p-2">
+                              <h2 class="dc-reset">F.A.Q.</h2>
+                            </div>
+
+                            <div class="dc-section-body">
+                              <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                      Bootstrap è davvero comodo come dicono?
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                      Sì, è che non lo sai usare.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                      Javascript mieterà molte vittime?
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                      Già non mi sento molto bene.
+                                    </div>
+                                  </div>
+                                </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        Posso usare position:absolute per allineare le colonne?
+                                      </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse dc-border"    aria-labelledby="panelsStayOpen-headingThree">
+                                      <div class="accordion-body ">
+                                        Sì perchè no, purchè Stefano e i Tutor non se ne accorgano.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                            </td>
-                          </tr>
-                          
-                        </tbody>
-                      </table>
-                  </div>
-                </div>
-                   <!-- --------/ TABELLA ----------- -->
-                  
-                   <!-- -------- FAQ - ACCORDION ----------- -->
+
+                        </div>
               
-                  <div class="dc-section p-2">
-                    <div class="dc-section-head p-2">
-                      <h2 class="dc-reset">F.A.Q.</h2>
-                    </div>
-
-                  <div class="dc-section-body">
-                    <div class="accordion accordion-flush">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                            Bootstrap è davvero comodo come sembra?
-                          </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                          <div class="accordion-body">
-                            Non l'ho ancora capito perfettamente.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                            Javascript mieterà molte vittime?
-                          </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                          <div class="accordion-body">
-                            Già non mi sento molto bene.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                            Posso usare position:absolute per allineare le colonne?
-                          </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                          <div class="accordion-body">
-                            Sì perchè no, purchè Stefano e i Tutor non se ne accorgano.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                  </div>
-                         
-
+                  </div>     
+                </div>
               </div>
+                         
                <!-- -----------  / LEFT MAIN  -------------- -->
 
+
+
+
                <!-- -----------    RIGHT MAIN  -------------- -->
-               <div class="col-12 col-lg-4 dc-debug dc-right-main h-100">
-               <!-- ---------TO DO LIST--------------------- -->
+               <div class="col-12 col-lg-4 dc-right-main h-100 p-3 py-lg-3 pe-lg-3 ps-lg-0">
+                 <div class="container-fluid p-0">
+                   <div class="row">
+                
+                
+                       <!-- ---------TO DO LIST--------------------- -->
               
-                <div class="dc-section p-2">
-                  <div class="dc-section-head p-2">
-                    <h2 class="dc-reset">TO-DO List</h2>
+                      <div class="col-12 dc-section mt-8">
+                        <div class="dc-section-head p-2">
+                          <h2 class="dc-reset">TO-DO List</h2>
+                        </div>
+                        <div class="dc-section-body p-2">
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="dc-check1">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Avvisare gli alunni
+                            </label>
+                          </div>
+                          <div>
+                            <input class="form-check-input" type="checkbox" value="" id="dc-check2">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Lezione Bootstrap 5
+                            </label>
+                          </div>
+                          <div>
+                            <input class="form-check-input" type="checkbox" value="" id="dc-check3">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Dominare il mondo con Laravel
+                            </label>
+                          </div>
+                        </div>
+                          
+
+                      </div>
+                      <!-- --------- / TO DO LIST--------------------- -->
+                      <div class="col-12 dc-section mt-3">
+                        <div class="dc-section-body container-fluid p-2 ">
+                          <div class="dc-outline-cont">
+                          <img src="assets/img/chart.jpeg" alt="chart">
+                          
+                          <h3 class="ps-3">Utenti attivi</h3>
+                          <p class="ps-3">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                          <ul class="p-0">
+                            <li>Gennaio: 1200</li>
+                            <li>Febbraio: 800</li>
+                            <li>Marzo: 1100</li>
+                            <li><a href="#">Visuaizza report approfondito</a></li>
+                          </ul>
+
+                        </div>
+
+
+                      
+                      
+                        </div>
+                      </div>
+                
+                    </div>
                   </div>
-                  <div class="dc-section-body p-2">
-
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="dc-check1">
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Avvisare gli alunni
-                      </label>
-                    </div>
-                    <div>
-                      <input class="form-check-input" type="checkbox" value="" id="dc-check2">
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Lezione Bootstrap 5
-                      </label>
-                    </div>
-                    <div>
-                      <input class="form-check-input" type="checkbox" value="" id="dc-check3">
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Dominare il mondo con Laravel
-                      </label>
-                    </div>
-                  </div>
-                    
-
-                </div>
-              <!-- --------- / TO DO LIST--------------------- -->
-
               </div>
+
              
                 
-      </div>
-      </div>
+            </div>
+          </div>
+        </div>
+           
 
 
-      </div>
+      
 
 
-    </div>
+        </div>
 
 
     
 
+      </div>
     </div>
   </main>
  
