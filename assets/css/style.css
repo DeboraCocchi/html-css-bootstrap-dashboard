@@ -8,6 +8,7 @@ body{
 header a, aside a{
   text-decoration: none;
   color:white;
+  font-size:90%;
 }
 header a:hover, aside a:hover{
   cursor: pointer;
@@ -242,3 +243,17 @@ span.dc-mini-icons{
   margin:0;
 }
 
+
+/*++++++++++++++++ M-QUERIES ++++++++++++++*/
+
+@media screen and (max-width:720px) {
+  table .priority-5{
+    display:none;
+  }
+}
+
+@media screen and (max-width:600px) {
+  table .priority-3{
+    display:none;
+  }
+}
