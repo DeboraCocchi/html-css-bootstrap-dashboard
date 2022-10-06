@@ -2,7 +2,7 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  margin:0;
+  font-weight: 300;
 }
 
 a{
@@ -56,11 +56,16 @@ main{
 
 }
 
+main .row.dc-reset:first-of-type{
+  height:100%;
+  background-color: red;;
+}
+
 /* +++++ASIDE+++++++++ */
 
 aside{
-  height:calc(100vh - 60px);
   background-color: var(--darkblue);
+  height: calc(100vh - 60px);
 
 }
 
@@ -94,8 +99,9 @@ main .row.dc-reset:first-of-type{
 }
 .dc-badge{
   border-radius:8px;
-  padding:5px 8px;
+  padding:3px 6px;
   font-weight: 400;
+  font-size:90%;
   margin:0 3px;
   color:white;
 }
@@ -140,34 +146,59 @@ main .row.dc-reset:first-of-type{
 }
 
 .dc-section-body table th[scope="row"]::before{
-  content:'\f121'; 
-	font-weight: 400;
-  font-family: "Font Awesome 5 Free";
+  content:'\f121''\00a0 '; 
+  display:inline-block;
+  width:20px;
+  height:20px;
+  margin:2px 3px;
+  background-color: orange;
+	font-weight: 600;
+  font-size:90%;
+  border-radius:50%;
+  font-family: "Font Awesome 6 Free";
+}
+
+.dc-section-body table th[scope="row"]{
+  font-weight: 300;
+  text-align: left;
 }
 
 table{
   text-align: center;
+  font-size:14px;
+}
+/* 
+table tr{
+  line-height:40px;
+ 
+} */
+
+table th[class="nome"]{
+  width:50%;
+  text-align: left;
 }
 
-table tr{
-  line-height:3rem;
-}
+
 
 .dc-mini-icons{
   display: inline-block;
   position: relative;
   border-radius:5px;
   border:1px solid grey;
-  padding:3px;
-  width:40px;
-  height:40px;
-  color:var(--grey);
-  margin:5px;
+  padding: 4px;
+  width:23px;
+  height:23px;
 }
+
+span.dc-mini-icons{
+  margin-right:5px;
+}
+
 
 .dc-mini-icons i{
   position: absolute;
-  font-size: 1.4rem;
-  right: 8px;
-  top: 8px;
+  font-size: 1rem;
+  right: 3px;
+  top: 3px;
+  color:grey;
 }
