@@ -30,6 +30,7 @@ header a:hover, aside a:hover{
 :root{
   --grey:rgb(73,70,70,);
   --darkblue:rgb(13,28,46);
+  --coral:rgb(236,77,64);
 }
 
 /*++++++++++ HEADER ++++++++++++++++++*/
@@ -43,24 +44,29 @@ header{
   z-index: 999;
 }
 
-.dc-nav-link{
+.dc-nav-link:not(a.dc-nav-link.dropdown-toggle){
   color:var(--grey);
 }
 
-.dc-form{
-  width:60%;
+a.dc-nav-link.dropdown-toggle i.bi-bell-fill{
+  color:var(--coral);
+}
+
+.dc-form-search{
+  width:100%;
+  border-left:0;
+  border-radius:0;
+  background-color:var(--bs-gray-400);
 }
 
 .dropdown-menu.dc-dropdown[data-bs-popper]{
-  left:-150px;
+  left:-130px;
 }
 
 /* +++++++++  MAIN / GENERAL +++++++++++ */
 
 main{
   height:calc(100vh - 60px);
-  padding-top:60px;
-
 }
 
 /* +++++ASIDE+++++++++ */
@@ -81,11 +87,15 @@ aside>div{
   padding:20px 5px;
 }
 
+#dc-little-logo{
+  height:40px;
+}
+
 
 /* ++++++++++  MAIN CONTAINER +++++++++++ */
 
 
-main .dc-main-container h3, .dc-main-container h5{
+main .dc-main-container h3:not(.offcanvas-body h3), .dc-main-container h5{
   display: inline-block;
   color:white;
 }
@@ -136,10 +146,16 @@ main .dc-main-container h3, .dc-main-container h5{
   border-top-right-radius: 8px;
 }
 
+.dc-section-head .dc-plus{
+  color:var(--bs-blue);
+  height:2rem;
+  width:2rem;
+  border-radius: 5px;
+  font-weight:200;
+  border:1px solid var(--bs-blue);
+  font-size:80%;
+  background-color:white;
 
-.dc-section-head .plus i{
-  font-size:220%;
-  font-weight:300;
 }
 
 .dc-section-body{
@@ -153,23 +169,33 @@ main .dc-main-container h3, .dc-main-container h5{
 
 }
 
+.dc-section-head h2{
+  font-weight:400;
+  font-size: 25px;
+  padding:0;
+  margin:0;
+}
+
+
 /* +++++++++  TABLE  +++++++++++++ */
 
 .dc-section-body table th[scope="row"]::before{
-  content:'\f121''\00a0 '; 
+  content:'\00a0 ''\f121''\00a0 '; 
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.5);
   display:inline-block;
   width:20px;
   height:20px;
   margin:2px 3px;
-  background-color: orange;
+  background-color: rgb(236,77,64);
+  color:white;
 	font-weight: 600;
-  font-size:90%;
+  font-size:80%;
   border-radius:50%;
   font-family: "Font Awesome 6 Free";
 }
 
 .dc-section-body table th[scope="row"]{
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -204,6 +230,10 @@ span.dc-mini-icons{
   right: 3px;
   top: 3px;
   color:grey;
+}
+
+.offcanvas-body h3{
+  color:black;
 }
 
 /* ++++++++++   ACCORDION ++++++++++++ */
