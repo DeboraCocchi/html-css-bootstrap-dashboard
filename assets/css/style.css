@@ -48,20 +48,34 @@ header{
   color:var(--grey);
 }
 
-a.dc-nav-link.dropdown-toggle i.bi-bell-fill{
-  color:var(--coral);
-}
 
-.dc-form-search{
+.dc-search-container{
+  padding:3px 8px;
   width:100%;
-  border-left:0;
-  border-radius:0;
+  border-radius:8px;
   background-color:var(--bs-gray-400);
 }
 
-.dropdown-menu.dc-dropdown[data-bs-popper]{
-  left:-130px;
+.dc-search-bar{
+  background-color: var(--bs-gray-400);
+  border:none;
+  width:500px;
 }
+  nav .dropdown-menu[data-bs-popper]{
+  position: absolute;
+  left:-120px;
+  right:0;
+
+}
+
+.dc-btn.show{
+  border:none;
+}
+
+.nav-item.dropdown>ul li:hover{
+  background-color: #e9ecef;
+}
+
 
 /* +++++++++  MAIN / GENERAL +++++++++++ */
 
@@ -95,7 +109,7 @@ aside>div{
 /* ++++++++++  MAIN CONTAINER +++++++++++ */
 
 
-main .dc-main-container h3:not(.offcanvas-body h3), .dc-main-container h5{
+main .dc-main-container h3:not(.offcanvas-header h3), .dc-main-container h5{
   display: inline-block;
   color:white;
 }
@@ -209,17 +223,20 @@ table th[class="nome"]{
   text-align: left;
 }
 
+table tr{
+  height:42px;
+  
+}
+
 .dc-mini-icons{
   display: inline-block;
   position: relative;
   border-radius:5px;
   border:1px solid grey;
+  background-color: white;
   padding: 4px;
-  width:23px;
-  height:23px;
-}
-
-span.dc-mini-icons{
+  width:25px;
+  height:25px;
   margin-right:5px;
 }
 
@@ -227,18 +244,39 @@ span.dc-mini-icons{
 .dc-mini-icons i{
   position: absolute;
   font-size: 1rem;
-  right: 3px;
-  top: 3px;
+  right: 4px;
+  top: 4px;
   color:grey;
 }
 
-.offcanvas-body h3{
+.dc-mini-icons:hover{
+  background-color: grey;
+  color:white;
+  border:1px solid white;
+}
+
+.dc-mini-icons:hover i{
+  color:white;
+}
+
+.offcanvas-body label{
+  margin:0;
+}
+
+.offcanvas-header h5{
   color:black;
+  margin:1rem;
 }
 
 /* ++++++++++   ACCORDION ++++++++++++ */
 
 .dc-border{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.accordion-flush .accordion-item:last-of-type, 
+.accordion-item:last-of-type .accordion-button.collapsed {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -275,7 +313,11 @@ span.dc-mini-icons{
 
 
 /*++++++++++++++++ M-QUERIES ++++++++++++++*/
-
+@media screen and (max-width:991px){
+  form .dc-search-bar{
+    width:100%;
+  }
+}
 @media screen and (max-width:720px) {
   table .priority-5{
     display:none;
